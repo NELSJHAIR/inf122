@@ -1,15 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow:regular);
 @import url(https://fonts.googleapis.com/css?family=Mako:regular);
+@import url(https://fonts.googleapis.com/css?family=Anton:regular);
 body{
-    background-color:#e8f574;
-   
+    background-color: #c29265;
     font-family: Mako;
 }
 h1{
-    color:rgb(28, 140, 168);
-    font-size: 25px;
+    color:#d6e267;
     font-family: Rubik Doodle Shadow;
-    background-color: rgb(155, 149, 247);
+    text-align: center;
+}
+h2{
+    font-family: Anton;
+    color: #fcf593;
+    font-weight: lighter;
 }
 p{
     font-size: large;
@@ -34,10 +38,19 @@ ul li {
     text-align: center;
 }
 .Enviar{
-    border-radius: 5px;
-    background-color:aqua;
+    border-radius: 15px;
+    background-color: #6fe2b6;
+    color:#312f2c;
+    font-weight: bold;
 }
 .etiqueta{
-    font-size: 30px;
+    background-color: #ee8383;
+    font-weight: bold;
+}
 
+.Enviar:hover{
+    background-color: #56bd95;
+}
+#name{
+    border-radius: 5px;
 }
