@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow:regular);
+@import url(https://fonts.googleapis.com/css?family=Mako:regular);
+body{
+    background-color:#e8f574;
+   
+    font-family: Mako;
+}
+h1{
+    color:rgb(28, 140, 168);
+    font-size: 25px;
+    font-family: Rubik Doodle Shadow;
+    background-color: rgb(155, 149, 247);
+}
+p{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+}
+img{
+    max-width: 25%;
+    max-height: 25%;
+}
+li{
+    font-size: 30px;
+}
+ol li{
+    font-size: 10px;
+    color: purple;
+}
+ul li {
+    color: green;
+    font-weight: bold;
+    background-color: #a7b905;
+    text-align: center;
+}
+.Enviar{
+    border-radius: 5px;
+    background-color:aqua;
+}
+.etiqueta{
+    font-size: 30px;
+
+}
