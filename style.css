@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow:regular);
+@import url(https://fonts.googleapis.com/css?family=Mako:regular);
+@import url(https://fonts.googleapis.com/css?family=Anton:regular);
+body{
+    background-color: #c29265;
+    font-family: Mako;
+}
+h1{
+    color:#d6e267;
+    font-family: Rubik Doodle Shadow;
+    text-align: center;
+}
+h2{
+    font-family: Anton;
+    color: #fcf593;
+    font-weight: lighter;
+}
+p{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+}
+img{
+    max-width: 25%;
+    max-height: 25%;
+}
+li{
+    font-size: 30px;
+}
+ol li{
+    font-size: 10px;
+    color: purple;
+}
+ul li {
+    color: green;
+    font-weight: bold;
+    background-color: #a7b905;
+    text-align: center;
+}
+.Enviar{
+    border-radius: 15px;
+    background-color: #6fe2b6;
+    color:#312f2c;
+    font-weight: bold;
+}
+.etiqueta{
+    background-color: #ee8383;
+    font-weight: bold;
+}
+
+.Enviar:hover{
+    background-color: #56bd95;
+}
+#name{
+    border-radius: 5px;
+}
