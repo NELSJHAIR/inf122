@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
 :root{
     --white:#FFFFFF;
     --black:#2B2E34;
@@ -8,40 +9,87 @@
     --clear-blue:#00C2FF;
 }
 .main{
-    font-family: Nunito;
-    background-color: var(--grey);
-    color: var(--white);
     width: 100%;
     height: 100%;
-    margin: 0;
+    color: var(--white);
+    background-color: var(--black);
+    font-family: Nunito;
+    text-align: center;
+}
+.Log{
+    color: var(--clear-blue);
+}
+.Logo{
+    color: var(--blue);
+}
+nav {
+    display: flex;
+    align-items: center; /* Para alinear verticalmente con .logo */
+    width: 100%;
+  }
+  
+  .logo {
+    margin-right: auto; /* Empujará .logo hacia la izquierda */
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    margin-right: 10px;
+  }
+  
+.Products{
+    color: var(--clear-blue);
+}
+
+.frame7{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.frame6{
+    text-align: center;
+}
+.frame5{
+    display: flex;
+    align-items: flex-start;
+    gap: 27px;
+    align-self: stretch;
+}
+.component1{
+    height: 182px;
+    flex: 1 0 0;
+}
+.component2{
+    height: 182px;
+    flex: 1 0 0;
+}
+.component3{
+    height: 182px;
+    flex: 1 0 0;
+}
+.rectangle5{
+    width: 300px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #0D1423;
+}
+.javaillustration{
+    display: flex;
+    width: 519.19px;
+    height: 199.93px;
+    padding: 1px 0px 0px 0px;
     justify-content: center;
     align-items: center;
-}
-.up{
-    display: flex;
-    grid-template-columns: auto 1fr auto;
-    justify-content: center;
-    align-items: flex-start;
     flex-shrink: 0;
 }
-h1{
-    justify-content: center;
-}
-.color1{
- color: var(--clear-blue);
-}
-.color2{
-    color:var(--blue);
-}
-ul{
-    list-style: none;
-    display: flex;
-    padding:0;
-}
-li{
-    margin-right: 10px;
-    justify-content: center;
-}
-.med{
-    display: flex;
+.vector1{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
 }
