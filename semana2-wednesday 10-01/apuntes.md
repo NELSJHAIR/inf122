@@ -37,3 +37,5 @@ create-react-app crear react
 - gitignore restringte para que no se suba 
 - QA
 - siempre usar git hub
+---------
+- elementos: son los que componen un componentes

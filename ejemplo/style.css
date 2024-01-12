@@ -24,12 +24,12 @@
 }
 nav {
     display: flex;
-    align-items: center; /* Para alinear verticalmente con .logo */
+    align-items: center; 
     width: 100%;
   }
   
   .logo {
-    margin-right: auto; /* Empujará .logo hacia la izquierda */
+    margin-right: auto; 
   }
   
   ul {
@@ -43,6 +43,7 @@ nav {
   
 .Products{
     color: var(--clear-blue);
+
 }
 
 .frame7{
@@ -79,6 +80,7 @@ nav {
     border-radius: 8px;
     background: #0D1423;
 }
+
 .javaillustration{
     display: flex;
     width: 519.19px;
