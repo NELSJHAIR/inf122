@@ -42,6 +42,5 @@
     margin-top: 24px;
 }
 .Social{
-    display:flex;
-    justify-content: start;
+    align-items: flex-start;
 }

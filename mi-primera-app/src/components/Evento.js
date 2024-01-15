@@ -19,6 +19,9 @@ function Evento() {
           Aprende a trabajar en equipo resolviendo increíbles acertijo
           ¡Anímate a ser parte de esta actividad!</p>
       </div>
+
+      
+    
     
     </div>
     
