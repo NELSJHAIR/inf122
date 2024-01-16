@@ -1,6 +1,5 @@
 import './App.css';
 import Boton from './componentes/Boton';
-import BotonB from './componentes/BotonB';
 import Contador from './componentes/Contador';
 import { useState } from 'react'; /* para guardarn estados */
 
@@ -8,6 +7,7 @@ import { useState } from 'react'; /* para guardarn estados */
 function App() {
   
   const [ nroClicks, setNumClicks] = useState(0);
+  const [show, setShow] = useState(true);
   const click = () => {
     setNumClicks(nroClicks+1);
     console.log(nroClicks);
@@ -29,19 +29,19 @@ function App() {
   const menosUno =()=>{
     setNumClicks(nroClicks-1);
   }
-  const [show,setShow]=useState(true);
-  const borrar =()=>{
-    
+  const mostrar = () => {
+    setShow(!show);
   }
   return (
     <div className="App">
       <div className="contenedor-principal">
-        <Contador nroClicks={nroClicks} />
+      <Contador nroClicks={nroClicks} mostrar={show} />
         <div className='contendedor-botones'>
           <Boton texto="Click" esBotonClick={true}
             funcionClick={click} />
           <Boton texto="Reiniciar" esBotonClick={false}
             funcionClick={reiniciar} />
+          <Boton texto="Mostrar/Ocultar" esBotonClick={false} funcionClick={mostrar} />
         <div className="contenedor-botones2">
           <Boton texto="-3" esBotonClick={true}
             funcionClick={menosTres}/>
@@ -52,10 +52,7 @@ function App() {
           <Boton texto="+1" esBotonClick={true}
             funcionClick={masUno}/>
         </div>
-        <div className='botonDelete'>
-          <BotonB texto="Borrar" esBotonClick={true}
-            funcionClick={borrar}/>
-        </div> 
+        
         </div>
       </div>
     </div>
