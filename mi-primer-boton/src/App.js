@@ -1,4 +1,4 @@
-import './App.css';
+<import './App.css';
 import Boton from './componentes/Boton';
 import Contador from './componentes/Contador';
 import { useState } from 'react'; /* para guardarn estados */

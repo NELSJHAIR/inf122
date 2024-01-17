@@ -11,7 +11,7 @@ function Tablero({ cuadros, onClick }) {
             />
         );
     }
-    
+
     return (
         <div>
             <div className="tablero">
