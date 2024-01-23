@@ -33,6 +33,51 @@
     #00000010,
     #00000080
   );
+  :root{
+    --orange:#ff872c;
+  --white: #dcdce5;
+  --gray: #dcdce5;
+  --sm: 24px;
+  --lg:160px;
+  }
+  :root{
+    --orange:#ff2c2c;
+    --back:#DCDCE5;
+  }
+  button {
+      width: 100%;
+      height: 80px;
+      font-family: Roboto, sans-serif;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 24px;
+      background-color: var(--orange);
+      }
+  
+  button:hover {
+      background-color:var(--back);
+      color: var(--orange);
+  }
+  :root{
+    --back:#DCDCE5;
+    --orange:#2a7577;
+    --md:160px
+}
+.contador {
+    min-width: 300px;
+    height: auto;
+    font-size: var(--md);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--back);
+    color:var(--orange);
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+  
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;

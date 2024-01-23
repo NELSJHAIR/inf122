@@ -1,7 +1,8 @@
-<import './App.css';
-import Boton from './componentes/components/boton';
-import Contador from './componentes/components/Contador';
-import { useState } from 'react'; /* para guardarn estados */
+'use client';
+import style from './page.module.css';
+import Boton from './contador/components/boton';
+import Contador from './contador/components/Contador';
+import { useState } from 'react'; 
 
 
 function App() {
@@ -33,16 +34,16 @@ function App() {
     setShow(!show);
   }
   return (
-    <div className="App">
-      <div className="contenedor-principal">
+    <div className={style.App}>
+      <div className={style["contenedor-principal"]}>
       <Contador nroClicks={nroClicks} mostrar={show} />
-        <div className='contendedor-botones'>
+        <div className={style['contendedor-botones']}>
           <Boton texto="Click" esBotonClick={true}
             funcionClick={click} />
           <Boton texto="Reiniciar" esBotonClick={false}
             funcionClick={reiniciar} />
           <Boton texto="Mostrar/Ocultar" esBotonClick={false} funcionClick={mostrar} />
-        <div className="contenedor-botones2">
+        <div className={style["contenedor-botones2"]}>
           <Boton texto="-3" esBotonClick={true}
             funcionClick={menosTres}/>
           <Boton texto="+3" esBotonClick={true}
