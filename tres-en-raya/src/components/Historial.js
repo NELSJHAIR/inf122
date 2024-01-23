@@ -1,10 +1,15 @@
 import React from 'react';
+import "../style/Historial.css";
 
 function Historial({ historial, saltarA }) {
     const movimientos = historial.map((paso, movimiento) => {
         const descripcion = movimiento ?
-            `Ir al movimiento #${movimiento}` :
-            'Ir al inicio del juego';
+            <span>
+                Ir al movimiento:{movimiento}
+            </span>:
+            <span>
+                Ir al inicio del juego
+            </span>
         return (
             <li key={movimiento}>
                 <button onClick={() => saltarA(movimiento)}>{descripcion}</button>

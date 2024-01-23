@@ -1,8 +1,7 @@
 import React from 'react';
 import '../style/Tablero.css';
 import Cuadro from './Cuadro';
-
-function Tablero({ cuadros, onClick }) {
+function Tablero({ cuadros, onClick, xIsNext, onPlay }) {
     function renderizarCuadro(i) {
         return (
             <Cuadro
@@ -11,7 +10,6 @@ function Tablero({ cuadros, onClick }) {
             />
         );
     }
-
     return (
         <div>
             <div className="tablero">

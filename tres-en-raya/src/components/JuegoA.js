@@ -14,42 +14,55 @@ function Juego() {
     const [cuadros, setCuadros] = useState(Array(9).fill(null));
     const [jugador, setJugador] = useState("X");
     const [ganador, setGanador] = useState(null);
+    const xIsNext = nroMovimiento % 2 === 0;
+
     const click = (i) => {
         const nuevoMovimiento = historial.slice(0, nroMovimiento + 1);
-        console.log("nuevoMovimiento", nuevoMovimiento);
         const movimientoActual = nuevoMovimiento[nuevoMovimiento.length - 1];
-        console.log("movimientoActual", movimientoActual);
         const cuadros = movimientoActual.cuadros.slice();
-        console.log("cuadrosTemp", cuadros);
         if (cuadros[i] === null) {
             cuadros[i] = jugador;
             setCuadros(cuadros);
             setJugador(jugador === "X" ? "O" : "X");
             setHistorial(nuevoMovimiento.concat([{ cuadros }]));
             setNroMovimiento(nuevoMovimiento.length);
+            setGanador(null);
         }
         if (calcularGanador(cuadros) !== null) {
             setGanador(calcularGanador(cuadros));
         }
+        
     }
     const saltarA = (movimiento) => {
-        console.log("movimiento", movimiento);
+        if(movimiento===0){
+            setHistorial([
+                {
+                cuadros: Array(9).fill(null)
+                }
+            ])
+        }
+        if (movimiento % 2 === 0) {
+            setJugador("X");
+        } else {
+            setJugador("O");
+        }
         setNroMovimiento(movimiento);
-        setJugador(jugador === "X" ? "O" : "X");
-
+        setGanador(null);
     }
     const movimientoActual = historial[nroMovimiento];
     return (
         <div className="juego">
             <div className="juego-tablero">
-                <h2>{ganador ? `Ganador: ${ganador}` : `Próximo jugador: ${jugador}`}</h2>
-                <Tablero cuadros={movimientoActual.cuadros} onClick={(i) => click(i)} />
+                <h2>{ganador ? `Ganador: ${ganador}`: `Ganador: --`}</h2>
+                <h2>{!ganador ? `Próximo jugador: ${jugador}`: `Próximo jugador: --`}</h2>
+                <Tablero xIsNext={xIsNext} cuadros={movimientoActual.cuadros} onClick={(i) => click(i) } ganador={ganador}/>
             </div>
             <Historial historial={historial} saltarA={saltarA} />
         </div>
     );
+    
 }
-export default Juego;
+
 
 function calcularGanador(cuadros) {
     const lineas = [
@@ -70,3 +83,4 @@ function calcularGanador(cuadros) {
     }
     return null;
 }
+export default Juego;

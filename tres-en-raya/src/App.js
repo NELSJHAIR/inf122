@@ -1,13 +1,12 @@
 import React from "react";
 import './App.css';
-import Tablero from './components/Tablero';
+import JuegoA from './components/JuegoA';
 
 function App() {
   return (
-    
     <div className="App">
-      <Tablero/>
-    
+      <h1>Tres en Raya</h1>
+      <JuegoA/>
     </div>
   );
 }

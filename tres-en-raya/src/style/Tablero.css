@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Titan+One&display=swap');
 .tablero {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    font-family: 'Play';
 }
