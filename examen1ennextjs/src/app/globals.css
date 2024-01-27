@@ -13,6 +13,7 @@
     --md: 24px;
     --lg: 46px;
     --fuente: 'Poppins';
+    --hover: #004743;
     
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),

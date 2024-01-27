@@ -45,3 +45,6 @@
     line-height: normal;
     text-align: center;
 }
+.tabsBackgroundItem:hover{
+    background-color: var(--brown);
+}

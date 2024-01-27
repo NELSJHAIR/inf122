@@ -12,6 +12,7 @@
     height: 80px;
     border-radius: 10px;
     background: var(--brown);
+    border: none;
 }
 
 .btnContent {
@@ -21,7 +22,7 @@
     gap: 10px;
 }
 
-.btnPrimary .btnContent p {
+.btnPrimary .btnContent a {
     color: var(--primary-background);
     font-size: var(--sm);
     font-weight: 500;
@@ -46,4 +47,10 @@
     font-weight: 500;
     line-height: normal;
 
+}
+.btnSecondary:hover {
+  background-color: var(--hover);
+}
+.btnPrimary:hover {
+  background-color: var(--segundo);
 }
