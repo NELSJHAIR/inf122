@@ -1,6 +1,51 @@
-.perfil{
+.profile{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+}
+.profile h1 {
+    font-size: var(--lg);
+    color: var(--primary-clear);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.profile p {
+    font-size: var(--md);
+    color: var(--secondary-clear);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.profile_img {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-color: var(--brown);
+    border-width: 5px;
+    border-style: solid;
+}
+
+.profile_img img {
+    border-radius: 50%;
+    width: 205px;
+    height: 205px;
+    object-fit: contain;
+}
+
+.profile_social {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.profile-social-img {
+    width: 36px;
+    height: 36px;
 }

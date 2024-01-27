@@ -1,0 +1,49 @@
+
+.buttons {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 38px;
+}
+
+.btnPrimary {
+    width: 290px;
+    height: 80px;
+    border-radius: 10px;
+    background: var(--brown);
+}
+
+.btnContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnPrimary .btnContent p {
+    color: var(--primary-background);
+    font-size: var(--sm);
+    font-weight: 500;
+    line-height: normal;
+
+}
+.btnSecondary .btnContent p {
+    padding-top: 23px;
+
+}
+.btnSecondary {
+    width: 290px;
+    height: 80px;
+    border-radius: 10px;
+    background: var(--btnContact);
+    text-decoration: none;
+}
+
+.btnSecondary .btnContent p {
+    color: var(--secondary-clear);
+    font-size: var(--sm);
+    font-weight: 500;
+    line-height: normal;
+
+}
